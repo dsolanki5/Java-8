@@ -24,7 +24,8 @@ public class StreamsComparatorExample {
 	}
 	
 	public static List<String> getStudentActivitiesByGpaDesc() {
-		return StudentDataBase.getAllStudents().stream()
+		return StudentDataBase.getAllStudents()
+				.stream()
 				.sorted(Comparator.comparing(Student::getGpa).reversed())
 				.map(Student::getActivities)
 				.flatMap(List::stream)
