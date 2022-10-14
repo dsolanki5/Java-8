@@ -1,4 +1,4 @@
-package com.learnJava.parallelstream;
+package parallelstream;
 
 public class Sum {
 

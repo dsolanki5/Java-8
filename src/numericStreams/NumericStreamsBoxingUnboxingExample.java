@@ -1,4 +1,4 @@
-package com.learnJava.numericstreams;
+package numericstreams;
 
 import java.util.List;
 import java.util.stream.Collectors;

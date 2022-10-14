@@ -1,10 +1,10 @@
-package com.learnJava.optional;
-
-import com.learnJava.data.Bike;
-import com.learnJava.data.Student;
-import com.learnJava.data.StudentDataBase;
+package optional;
 
 import java.util.Optional;
+
+import data.Bike;
+import data.Student;
+import data.StudentDataBase;
 
 public class OptionalMapFlatMapExample {
 

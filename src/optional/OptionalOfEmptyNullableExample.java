@@ -1,4 +1,4 @@
-package com.learnJava.optional;
+package optional;
 
 import java.util.Optional;
 

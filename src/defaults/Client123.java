@@ -1,4 +1,4 @@
-package com.learnJava.defaults;
+package defaults;
 
 public class Client123 implements Interface1,Interface2,Interface3 {
 

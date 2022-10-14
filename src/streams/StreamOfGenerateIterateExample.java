@@ -1,4 +1,4 @@
-package com.learnJava.streams;
+package streams;
 
 import java.util.Random;
 import java.util.function.Supplier;

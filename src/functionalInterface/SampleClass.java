@@ -1,4 +1,4 @@
-package com.learnJava.functionalInterfaces;
+package functionalInterface;
 
 public class SampleClass {
     public static void main(String[] args) {

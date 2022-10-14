@@ -1,4 +1,4 @@
-package com.learnJava.lambdas;
+package lambdas;
 
 import java.util.function.Consumer;
 

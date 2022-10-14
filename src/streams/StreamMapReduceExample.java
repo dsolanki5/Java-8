@@ -1,7 +1,7 @@
-package com.learnJava.streams;
+package streams;
 
-import com.learnJava.data.Student;
-import com.learnJava.data.StudentDataBase;
+import data.Student;
+import data.StudentDataBase;
 
 public class StreamMapReduceExample {
 

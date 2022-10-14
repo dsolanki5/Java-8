@@ -1,4 +1,4 @@
-package numericStreams;
+package numericstreams;
 
 import java.util.OptionalDouble;
 import java.util.OptionalInt;

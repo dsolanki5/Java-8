@@ -1,4 +1,4 @@
-package com.learnJava.dates;
+package dates;
 
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;

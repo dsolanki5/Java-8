@@ -1,4 +1,4 @@
-package com.learnJava.numericstreams;
+package numericstreams;
 
 import java.util.stream.DoubleStream;
 import java.util.stream.IntStream;

@@ -1,16 +1,12 @@
-package com.learnJava.streams;
+package streams;
 
-import com.learnJava.data.Student;
-import com.learnJava.data.StudentDataBase;
-
-import java.time.LocalDate;
 import java.util.List;
 import java.util.Map;
 import java.util.function.Predicate;
 import java.util.stream.Collectors;
-import java.util.stream.IntStream;
 
-import static java.time.temporal.ChronoUnit.DAYS;
+import data.Student;
+import data.StudentDataBase;
 
 public class StreamsExample {
 

@@ -1,13 +1,13 @@
-package com.learnJava.functionalInterfaces;
+package functionalInterface;
 
-
-import com.learnJava.data.Student;
-import com.learnJava.data.StudentDataBase;
 
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.function.Function;
+
+import data.Student;
+import data.StudentDataBase;
 
 public class FunctionStudentExample {
 

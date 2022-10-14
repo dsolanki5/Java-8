@@ -1,10 +1,10 @@
-package com.learnJava.functionalInterfaces;
-
-import com.learnJava.data.Student;
-import com.learnJava.data.StudentDataBase;
+package functionalInterface;
 
 import java.util.List;
 import java.util.function.BiConsumer;
+
+import data.Student;
+import data.StudentDataBase;
 
 public class BiConsumerExample {
 

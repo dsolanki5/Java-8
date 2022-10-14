@@ -15,6 +15,7 @@ public class FunctionExample {
 	// In Function, 1st parameter is Input type and 2nd paramter is output type
 	static Function<String, String> fun1 = (str) -> str.toUpperCase();
 	static Function<String, String> fun2 = str -> str.toUpperCase().concat("new");
+	static Function<String,String> addSomeString = (name) -> name.toUpperCase().concat("default");
 	
 	// Student using Function : 
 			static Function<List<Student>, Map<String,Double>> funStudent = (students -> {

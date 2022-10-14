@@ -1,4 +1,4 @@
-package com.learnJava.defaults;
+package defaults;
 
 import java.util.List;
 

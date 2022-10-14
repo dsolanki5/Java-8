@@ -1,11 +1,11 @@
-package com.learnJava.parallelstream;
+package parallelstream;
 
-import com.learnJava.data.Student;
-import com.learnJava.data.StudentDataBase;
+import static java.util.stream.Collectors.toList;
 
 import java.util.List;
 
-import static java.util.stream.Collectors.toList;
+import data.Student;
+import data.StudentDataBase;
 
 public class ParallelStreamExample1 {
 

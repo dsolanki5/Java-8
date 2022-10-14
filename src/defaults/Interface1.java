@@ -1,4 +1,4 @@
-package com.learnJava.defaults;
+package defaults;
 
 public interface Interface1 {
 
