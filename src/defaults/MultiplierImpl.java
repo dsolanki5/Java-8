@@ -15,4 +15,10 @@ public class MultiplierImpl implements Multiplier {
         System.out.println("Inside MultiplierImpl class");
         return integerList.size();
     }
+    
+    static boolean isEmpty(List<Integer> integerList){
+
+    	System.out.println("Inside MultiplierImpl class - Static() ");
+        return integerList!=null && integerList.size()>0;
+    }
 }

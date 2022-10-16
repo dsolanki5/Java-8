@@ -1,4 +1,4 @@
-package practisce.interviews;
+package practisce.interviews.java8;
 
 public class Employee {
 	

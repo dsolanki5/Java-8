@@ -17,6 +17,7 @@ public interface Multiplier {
 
     static boolean isEmpty(List<Integer> integerList){
 
+    	System.out.println("Inside Multiplier Interface - Static() ");
         return integerList!=null && integerList.size()>0;
     }
 }

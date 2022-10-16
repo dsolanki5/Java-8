@@ -4,6 +4,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.Optional;
 import java.util.Set;
+import java.util.stream.Collectors;
 
 import static java.util.stream.Collectors.groupingBy;
 import static java.util.stream.Collectors.summingInt;
@@ -52,7 +53,7 @@ public class StreamGroupingByExample {
 
 	        Map<String,Integer> studentMap = StudentDataBase.getAllStudents()
 	                .stream()
-	                .collect(groupingBy(Student::getName,
+	                .collect(groupingBy(Student::getName, 
 	                        summingInt(Student::getNoteBooks)));
 
 	        System.out.println(studentMap);
@@ -87,6 +88,13 @@ public class StreamGroupingByExample {
 
 	        System.out.println(studentMapOptional1);
 	    }
+	    
+	    public static void getCountAsPerGender() {
+	    	Map<String,Long> noOfMaleFemaleMap = StudentDataBase.getAllStudents().stream()
+	    			.collect(Collectors.groupingBy(Student::getGender, Collectors.counting()));
+	    	
+	    	System.out.println(noOfMaleFemaleMap);
+	    }
 
 	    public static void calculateleastGpa(){
 
@@ -109,12 +117,13 @@ public class StreamGroupingByExample {
 	    public static void main(String[] args) {
 
 	       // groupStudentsByGender();
-	        //customizedGroupingBy();
-	        //twoLevelGrouping_1();
-	       // twoLevelGrouping_2();
-	       // threeArgumentGroupBy();
+//	        customizedGroupingBy();
+//	        twoLevelGrouping_1();
+//	        twoLevelGrouping_2();
+	        threeArgumentGroupBy();
+	        getCountAsPerGender();
 	        //calculateTopGpa();
-	        calculateleastGpa();
+//	        calculateleastGpa();
 
 	    }
 
