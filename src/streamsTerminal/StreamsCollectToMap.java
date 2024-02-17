@@ -21,13 +21,14 @@ public class StreamsCollectToMap {
 		List<Emp2> list2 = new ArrayList<>();
 		list2.add(new Emp2("Dikesh", 250000));
 		list2.add(new Emp2("A", 25000));
+		list2.add(new Emp2("A", 35000));
 		list2.add(new Emp2("B", 2000));
 		list2.add(new Emp2("C", 45300));
 		
-		Map<String, Integer> listToMap = list2.stream()
-				.collect(Collectors.toMap(Emp2::getName, Emp2::getSalary));
+//		Map<String, Integer> listToMap = list2.stream()
+//				.collect(Collectors.toMap(Emp2::getName, Emp2::getSalary));
 		
-		listToMap.forEach((k,v) -> System.out.println(k+ " : "+v));
+//		listToMap.forEach((k,v) -> System.out.println(k+ " : "+v));
 		
 		
 		/*
@@ -43,6 +44,21 @@ public class StreamsCollectToMap {
 		 */
 		Map<Integer,String> distinctValueMap = list2.stream()
 				.collect(Collectors.toMap(Emp2::getSalary, Emp2::getName, (e1,e2)->e1, LinkedHashMap::new));
+		System.out.println("ditinctValueMap :: "+distinctValueMap);
+		
+//		Map<String, Emp2> linkedHashMap = list2.stream()
+//                .collect(Collectors.toMap(
+//                        Emp2::getName, // keyMapper
+//                        emp -> emp, // valueMapper
+//                        (existing, replacement) -> {
+//                            // Merge function: Sum up salaries for duplicate keys
+//                            existing.setSalary(existing.getSalary()+replacement.getSalary());
+//                            return existing;
+//                        }, // merge function
+//                        LinkedHashMap::new // mapSupplier
+//                ));
+//		System.out.println("linkedHashMap :: "+linkedHashMap);
+
 		
 		/*
 		 * Duplicate keys in Map will throw IllegalStateException. To handle duplicate keys we use merge function parameter
@@ -53,7 +69,7 @@ public class StreamsCollectToMap {
 				.collect(
 						Collectors.toMap(s->s.length(), //1st parameter: key is Integer
 								s -> s,					//2nd Paramter : value is String
-								(s1,s2)->s1+" "+s2		//3rd Paramter: Merge Function - what to do if duplicate keys -> concat values
+								(s1,s2)->s1+"|"+s2		//3rd Paramter: Merge Function - what to do if duplicate keys -> concat values
 							)
 						);
 		

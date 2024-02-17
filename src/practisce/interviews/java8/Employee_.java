@@ -1,15 +1,15 @@
 package practisce.interviews.java8;
 
-public class Employee {
+public class Employee_ {
 	
 	private String name;
 	private int age;
 	
-	public Employee() {
+	public Employee_() {
 		
 	}
 	
-	public Employee(String name, int age) {
+	public Employee_(String name, int age) {
 		super();
 		this.name = name;
 		this.age = age;

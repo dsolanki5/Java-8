@@ -18,7 +18,7 @@ public class FunctionExample {
 	static Function<String,String> addSomeString = (name) -> name.toUpperCase().concat("default");
 	
 	// Student using Function : 
-			static Function<List<Student>, Map<String,Double>> funStudent = (students -> {
+			static Function<List<Student>, Map<String,Double>> funStudent = (students) -> {
 				
 				Map<String,Double> hm = new HashMap<>();
 				students.forEach(stud -> {
@@ -27,7 +27,7 @@ public class FunctionExample {
 					}
 				});
 				return hm;
-			});
+			};
 	
 	/*
 	 * BiFunction and Student Example :

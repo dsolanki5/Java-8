@@ -16,7 +16,7 @@ public class LocalDateExample {
         LocalDate localDate1 = LocalDate.of(2018,07,17);
         System.out.println("localDate1 : " + localDate1);
 
-        LocalDate localDate2 = LocalDate.ofYearDay(2018,02);
+        LocalDate localDate2 = LocalDate.ofYearDay(2018,150);
         System.out.println("localDate2 : " + localDate2);
 
         /**

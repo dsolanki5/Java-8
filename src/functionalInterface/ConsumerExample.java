@@ -13,9 +13,9 @@ public class ConsumerExample {
 	
 	static List<Student> studs = StudentDataBase.getAllStudents();
 	
-	static Consumer<Student> studConsumer = (s)-> System.out.println(s);
-	static Consumer<Student> studName = (s) -> System.out.println(s.getName());
-	static Consumer<Student> studActivities = (s) -> System.out.println(s.getActivities()); 
+	static Consumer<Student> studConsumer = (s)-> System.out.println(s); //brackets are optional for single param
+	static Consumer<Student> studName = s -> System.out.println(s.getName());
+	static Consumer<Student> studActivities = s -> System.out.println(s.getActivities()); 
 	
 	
 	public static void printStudName() {

@@ -116,13 +116,13 @@ public class StreamGroupingByExample {
 
 	    public static void main(String[] args) {
 
-	       // groupStudentsByGender();
+//	        groupStudentsByGender();
 //	        customizedGroupingBy();
-//	        twoLevelGrouping_1();
+	        twoLevelGrouping_1();
 //	        twoLevelGrouping_2();
 	        threeArgumentGroupBy();
-	        getCountAsPerGender();
-	        //calculateTopGpa();
+//	        getCountAsPerGender();
+	        calculateTopGpa();
 //	        calculateleastGpa();
 
 	    }

@@ -20,12 +20,12 @@ public class SortUsingCompartAndReduce {
 		// Q1. Sort Employee by its Age :
 		// Get Employee having minimum age : 
 		
-		Employee e1 = new Employee("Dikesh", 39);
-		Employee e2 = new Employee("Ram", 20);
-		Employee e3 = new Employee("Santosh", 31);
-		Employee e4 = new Employee("Alex", 50);
+		Employee_ e1 = new Employee_("Dikesh", 39);
+		Employee_ e2 = new Employee_("Ram", 20);
+		Employee_ e3 = new Employee_("Santosh", 31);
+		Employee_ e4 = new Employee_("Alex", 50);
 		
-		List<Employee> empList = new ArrayList<>();
+		List<Employee_> empList = new ArrayList<>();
 		
 		empList.add(e1);
 		empList.add(e2);
@@ -37,19 +37,19 @@ public class SortUsingCompartAndReduce {
 		
 		System.out.println("Before sorting : "+empList);
 		
-		List<Employee> sortedEmpList = new ArrayList<>();
+		List<Employee_> sortedEmpList = new ArrayList<>();
 		
 		/*
 		 * solution 1.1
 		 */
-		Comparator<Employee> compEmp =  Comparator.nullsLast(Comparator.comparing(Employee::getAge));		
+		Comparator<Employee_> compEmp =  Comparator.nullsLast(Comparator.comparing(Employee_::getAge));		
 		empList.sort(compEmp);
 		System.out.println("1.1 : After sorting : "+empList);
 		
 		/*
 		 * solution 1.2
 		 */
-		Optional<List<Employee>> nullCheck = Optional.ofNullable(empList);
+		Optional<List<Employee_>> nullCheck = Optional.ofNullable(empList);
 		if(nullCheck.isPresent()) {
 			System.out.println("Soln 1.2 : ");
 			empList.stream().filter(emp ->emp !=null).sorted((d1,d2)->d1.getAge()-d2.getAge()).limit(1)
@@ -62,13 +62,13 @@ public class SortUsingCompartAndReduce {
 		sortedEmpList = empList.stream().filter(emp -> emp!=null).sorted(compEmp).limit(1).collect(Collectors.toList());
 		System.out.println("Soln 1.3 : "+sortedEmpList);
 		
-		Employee minEmp = empList.stream().filter(emp -> emp!=null).sorted(compEmp).limit(1).collect(Collectors.toList()).get(0);
+		Employee_ minEmp = empList.stream().filter(emp -> emp!=null).sorted(compEmp).limit(1).collect(Collectors.toList()).get(0);
 		System.out.println("Sol.3: Fetch Emp obj: "+minEmp);
 		
 		/*
 		 * solution 1.4
 		 */
-		Optional<Employee> minAgeEmployee = empList.stream()
+		Optional<Employee_> minAgeEmployee = empList.stream()
 				.filter(emp->emp!=null)
 				.reduce((e11,e22) -> e11.getAge()<e22.getAge()?e11:e22);
 		

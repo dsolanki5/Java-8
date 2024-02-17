@@ -1,0 +1,7 @@
+Just a date? : Then use LocalDate
+Just a time? : Then use LocalTime
+Date, time and time-zone? : Then use ZonedDateTime
+Just a timestamp with no other info? : Then use Instant
+A network date-time format with offset (not zone)? : Then use OffsetDateTime.
+
+https://stackoverflow.com/questions/35043788/migrate-from-joda-time-library-to-java-time-java-8
